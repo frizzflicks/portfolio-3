@@ -1,0 +1,368 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 1;
+    font-family: "Montserrat", serif;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    z-index: 1;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("./Assets/pexels-stywo-1261728.jpg");
+    background-size: cover;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+    position: relative;
+    color: #ffe7e7;
+}
+
+.hero::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    content: "";
+    background-color: #0000009d;
+}
+
+.nav-ul {
+    display: flex;
+    flex: 60% 1 1;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    align-content: center;
+    display: flex;
+    max-height: min-content;
+
+}
+
+.logo {
+    padding: 1rem 2rem;
+    color: tomato;
+    font-weight: 900;
+    font-size: 2rem;
+    flex: 20% 0 1;
+}
+
+.btn-contact {
+    display: flex;
+    flex: 20% 0 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-contact-inside {
+    padding: 0.5rem 0.8rem;
+    max-height: min-content;
+    background: #00000000;
+    border: solid 0.1rem tomato;
+    border-radius: 0.2rem;
+    color: tomato;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    color: tomato;
+    cursor: pointer;
+}
+
+.btn-contact-inside:hover {
+    background: tomato;
+    color: #fff;
+    box-shadow: 0 0 1rem rgba(255, 99, 71, 0.623);
+}
+
+.active-li-nav {
+    color: tomato;
+}
+
+.hero-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30rem;
+    aspect-ratio: 1;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    z-index: 1;
+}
+
+.hero-card img {
+    width: 10rem;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: brightness(0.8);
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 2.5rem;
+    color: tomato;
+    letter-spacing: 0.1rem;
+    min-width: max-content;
+}
+
+.description {
+    text-align: center;
+}
+
+.visible {
+    display: none;
+}
+
+.about-section {
+    height: 100vh;
+    color: #d4d0d0;
+    background: rgb(22, 22, 46);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+    gap: 1rem;
+}
+
+.left {
+    display: flex;
+    flex: 40% 0 1;
+    justify-content: flex-end;
+}
+
+.left img {
+    max-width: 100%;
+    height: 30rem;
+    object-fit: cover;
+}
+
+.right {
+    display: flex;
+    flex: 45% 0 1;
+    flex-direction: column;
+    justify-content:
+        flex-start;
+    gap: 1rem;
+}
+
+.right .description {
+    text-align: left;
+    font-size: 0.8rem;
+    color: rgb(177, 177, 177);
+    line-height: 1.2rem;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill {
+    justify-content: space-between;
+    display: flex;
+    flex: 40% 0 0;
+    font-size: 0.8rem;
+}
+
+
+
+.skillname {
+    font-weight: 700;
+}
+
+.cv-download {
+    align-self: center;
+    padding: 0.7rem 1.5rem;
+    background-color: tomato;
+    border: none;
+    color: #000;
+    font-size: 1rem;
+    margin-top: 0.6rem;
+    transition: box-shadow 0.1s ease;
+}
+
+.cv-download:hover {
+    box-shadow: 0 0 1rem tomato;
+    cursor: pointer;
+}
+
+.cv-download:active {
+    background: rgb(80, 76, 76);
+    box-shadow: 0 0 1rem grey;
+    color: #fff;
+}
+
+.text-small {
+    color: tomato;
+}
+
+.about-me,
+.my-services {
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    color: #fff;
+}
+
+.services {
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(34, 34, 66);
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    justify-content: center;
+    padding-inline: 10rem
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    justify-content: space-between;
+    margin-block: 2rem;
+    
+}
+
+.service-card {
+    display: flex;
+    flex: 32% 0 1;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #e1e1ec;
+    border: 0.1rem solid tomato;
+    padding: 1.6rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: 0.2s ease box-shadow, 0.3s ease-in-out scale;
+}
+
+.service-card:hover{
+    background: rgba(255, 99, 71, 0.726);
+    box-shadow: 0 0 1rem tomato;
+    color: rgb(22, 22, 46);
+    scale: 1.05;
+}
+
+.card-head {
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.img {
+    width: 2rem;
+}
+.img img{
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px){
+    .services{
+        padding-inline: 2rem;
+    }
+}
+
+@media screen and (max-width: 789px) {
+    .navbar {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .about-section {
+        flex-direction: column;
+        height: auto;
+        padding-block: 4rem;
+    }
+
+    .service-card{
+        min-width: fit-content;
+        margin-block: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width: 576px) {
+    .nav-ul {
+        flex-direction: column;
+        gap: 0.3rem;
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .btn-contact {
+        min-width: max-content;
+        margin-right: 1rem;
+    }
+
+    .visible {
+        display: flex;
+        width: 1rem;
+        aspect-ratio: 1;
+        height: 1rem;
+        margin: 0.5rem;
+        position: relative;
+    }
+
+    .visible svg {
+        height: 1rem;
+        cursor: pointer;
+    }
+
+    html {
+        font-size: 88%;
+    }
+
+    .showMenu {
+        display: flex;
+        position: absolute;
+        right: 1rem;
+        top: 5rem;
+        border: 0.1rem solid #fff;
+        border-radius: 0.2rem;
+        padding: 1rem;
+    }
+
+    .showMenu:hover {
+        border-color: tomato;
+    }
+}
+
+@keyframes scale-a-lil {
+    from {
+        scale: .5;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .hero-card {
+        animation: scale-a-lil linear both;
+        animation-timeline: view();
+        animation-range: 25vh 75vh;
+    }
+}
